@@ -3,20 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Docs</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Martian+Mono:wght@300&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <div class="header">
       <div class="nav-bar">
         <ul class="socials">
+          <li>
+            <a href="/signup">Register / Login</a>
+          </li>
           <li><a href="">𝕏</a></li>
           <li>
             <a href="https://github.com/nmhudson2/its-351" target="_blank"
               >Github</a
             >
           </li>
-          <li><a href="">Documentation</a></li>
+          <li><a href="./docs/index.html">Documentation</a></li>
         </ul>
+        <!-- User profile placeholder; may use HTMX for things like this -->
+      </div>
+    </div>
+    <div class="main">
+      <div class="section">
+        <h1>Table of Contents</h1>
+        <hr />
+        <ul>
+          <li><a href="#using_the_script">Using the Script</a></li>
+          <li><a href="#view_metrics">Viewing Your Metrics</a></li>
+          <li><a href="#large_request">Requesting All Data</a></li>
+        </ul>
+      </div>
+      <div class="section" id="using_the_script">
+        <h1 class="title"><u>Using the script</u></h1>
+        <p cless="section-desc">
+          First, <a>create your account</a>, then navigate to your profile under
+          the settings page. Here you can find your API key, which will be used
+          to construct your unique URL. <br />
+          Do not share this key; any time it is loaded ona a page it will affect
+          your metrics. <br /><br /><br /><br />
+          The URL for yout script is comprised of 3 segments: your API key, the
+          list of metrics you want to capture, and finally an optional format
+          parameter that is to be used <br />
+          only when requesting all of the available data tied to the provided
+          API key. <br /><br /><br /><br />
+          <code>
+            &#60;script
+            src="http://flowcone.com/users/api/&#60;YOUR_API_KEY&#62;&#46;&#60;FORMAT&#62;&#46;&#91;METRICS_TO_CAPTURE&#93;"&#62;&#60;/script&#62;
+          </code>
+        </p>
+      </div>
+      <div class="section" id="view_metrics">
+        <h1 class="title"><u>Using the script</u></h1>
+        <p cless="section-desc">
+          First, <a>create your account</a>, then navigate to your profile under
+          the settings page. Here you can find your API key, which will be used
+          to construct your unique URL.
+        </p>
+      </div>
+      <div class="section" id="large_request">
+        <h1 class="title"><u>Using the script</u></h1>
+        <p cless="section-desc">
+          First, <a>create your account</a>, then navigate to your profile under
+          the settings page. Here you can find your API key, which will be used
+          to construct your unique URL.
+        </p>
       </div>
     </div>
   </body>
